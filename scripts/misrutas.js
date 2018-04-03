@@ -13,7 +13,9 @@ const showRoutes = () => {
                 console.log(name);
                 console.log(latitudB);
                 console.log(longitudB);
-             
+                localStorage.latitudeB = latitudB;
+                localStorage.longitudeB= longitudB;
+
                })
                calculateRouteFromAtoB(platform);
                console.log(keyruta);

@@ -20,11 +20,12 @@ var map = new H.Map(mapContainer,
   
 
 
-    
+    console.log(localStorage.latitudeB);
+    console.log(localStorage.longitudeB);
+
     function calculateRouteFromAtoB (platform) {
         var prueba3 = localStorage.myLongitude;
         console.log(prueba3.toString());
-       var prueba1 = '-12.0628815';
        //var prueba2= '-76.9361958'
         var prueba2= localStorage.myLatitude;
         console.log(typeof(localStorage.myLatitude))

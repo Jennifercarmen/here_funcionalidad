@@ -24,8 +24,7 @@ window.addEventListener('load', begin,false)
 
 console.log('v o f', localStorage.myLongitude==='-76.9361273');
 
-localStorage.latitudeB= -5.1934791;
-localStorage.longitudeB= -80.6250559
+
 
 
 function calculateRouteFromAtoB (platform) {
