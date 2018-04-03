@@ -1,0 +1,103 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gelary</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css" />
+        <link rel="stylesheet" href="styles/app.css">
+        <link rel="stylesheet" href="styles/style.css">
+
+		<!-- Some Open Graph tags -->
+		<meta name="description" 				content="[ARTICLE_DESCRIPTION]">
+		<meta name="author" 					content="[AUTHOR_NAME_OF_THE_ARTICLE]">
+	    <meta property="og:locale" 				content="en_US"/>
+	    <meta property="og:type" 				content="article"/>
+	    <meta property="og:title" 				content="[ARTICLE_TITLE]"/>
+	    <meta property="og:description" 		content="[ARTICLE_DESCRIPTION]"/>
+	    <meta property="og:url" 				content="[ARTICLE_URL]"/>
+	    <meta property="og:site_name" 			content="[WEBSITE_NAME]"/>
+	    <meta property="article:publisher" 		content="[https://www.facebook.com/USERNAME]"/>
+	    <meta property="article:published_time" content="[PUBLISHED_TIME_OF_YOUR_ARTICLE Ex: 2015-12-08T20:50:00Z]"/>
+	   	<meta property="og:image" 				content="[MAIN_IMAGE_URL]"/>
+		    
+	    
+	    <meta name="twitter:title" 				content="[ARTICLE_TITLE]"/>
+	    <meta name="twitter:description" 		content="[ARTICLE_DESCRIPTION]"/>
+	    <meta name="twitter:image" 				content="[MAIN_IMAGE_URL]"/>
+	    <meta name="twitter:site" 				content="@[TWITTER_USERNAME]"/>
+	    <meta name="twitter:creator" 			content="@[TWITTER_USERNAME]"/>
+	    <meta name="twitter:via" 				content="[TWITTER_USERNAME]"/>
+	    <meta name="twitter:card" 				content="photo"/>
+        <meta name="twitter:url" 				content="[ARTICLE_URL]"/>
+        <link rel="stylesheet" href="styles/main.css">
+
+    </head>
+    
+    <body>
+
+		<!-- Buttons, Copy this to your Page Article -->
+		<div class="share-buttons-row">
+        <!--Facebook's Button -->
+        <div class="share-fb"></div>
+        <!--Twitter's Button -->
+        <div class="share-twitter"></div>
+        <!--Facebook's Button -->
+        <div class="share-google-plus"></div>
+        <!--Linkedin's Button -->
+        <div class="share-linkedin"></div>
+        <!--Pinterest's Button -->
+        <div class="share-pinterest"></div>
+        <!--Tumblr's Button -->
+        <div class="share-tumblr"></div>
+      </div>
+      
+        <button id="grabar">Grabar</button>
+     <a href="verRutas.html">ver rutas</a> 
+
+
+        <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 d-flex align-items-center justify-content-center p-3 bg-input">
+                    <input class="search-input-styles principal-input-js" type="text" placeholder="¿A dónde quieres ir?">
+                    <button type="submit" class="btn btn-here search-button-js">Buscar</button>
+                    <br>
+                    <button class="btn btn-info arrive-js ml-1">Instrucciones</button>
+          
+                  </div>
+                </div>
+                <div id="ubicacion">
+          
+                </div>
+              </div>
+              
+              <section class=" m-0 p-0 w-100">
+                    <div class="">
+                      <div class="row m-0 box_mapa p-0">
+                        <div class="col-12 w-100 p-0" id="map"></div>       
+                      <!--   </div> -->
+                      </div>
+                      <div class="row m-0 p-3 box_mapa">
+                        <div class="col-12 w-100" id="panel"></div>
+                      </div>
+                    </div>
+            </section>
+
+            <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"></script>
+          <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-service.js"></script>
+          <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+          <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+          
+           
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+            <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
+                <script src="scripts/config_firebase.js"></script>
+                <script src="scripts/app.js"></script>
+                <script src="scripts/functions.js"></script>
+                <script src="scripts/buscarruta.js"></script>
+
+          </body>
+          </html>

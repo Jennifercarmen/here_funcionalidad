@@ -1,0 +1,378 @@
+/* layout´s colors : */
+
+:root {
+    --first-color : #49E0D5;
+    --first-color-sec : #00AFAA;
+    --text-color: #8EDFDC;
+    --second-color: #101420;
+   --second-color-sec: #383C45    
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    /* padding-top: 4.5rem; */
+}
+
+img.img-brand {
+    width: 70px;
+}
+
+.navbar{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+ul.navbar-nav.mr-auto {
+    margin-left: 40px;
+}
+
+.box_mapa {
+    background-color: #252c34;
+    color:#fff;
+}
+
+footer{
+    padding: 30px;
+    background-color: var(--second-color-sec);
+    color: #fff;
+}
+
+.btn-here {
+    color: #fff;
+    background-color:var(--first-color-sec);
+    border-color: var(--first-color-sec);
+}
+
+.btn-navbar {
+    color: var(--first-color);
+    background-color: transparent;
+    border-color: var(--first-color);
+    padding: 5px 15px;
+}
+
+.btn-navbar:hover{
+    color: #fff;
+    border:none;
+    background-color: var(--first-color-sec);
+    transition: 0.4s all;
+}
+
+a:focus{
+    outline: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.search-input-styles{
+    border: none;
+    padding: 5px;
+    width: 60%;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 7px 29px -2px rgba(0,0,0,0.25);
+}
+
+.search-input-styles:focus{
+    outline: none;
+}
+
+.bg-input{
+    background-color: #CDCED0;
+}
+
+
+@media (min-width: 1200px){
+    .menu {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: white;
+    }
+    .navbar-dark .navbar-nav .active>.nav-link{
+        color: white;;
+    }
+    li.nav-item.active {
+        border-bottom: 4px solid #48dad0;
+    }
+    li.nav-item {
+        margin-right: 10px;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color:#189b89 ;
+    }
+}
+.access-links {
+    float: right;
+    margin: 15px 0;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.jumbotron {
+    color: white;
+    background-image: url('../assets/images/bg-main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 350px;
+}
+
+.opacity{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.bg-dark {
+    background-color: var(--second-color) !important;
+}
+
+
+/* Login */
+main#page {
+    padding: 50px;
+}
+.title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.description{
+    font-family: 'Lora', serif;
+
+}
+#inifacebook {
+    background-color: #2c3271;
+}
+#inigoogle {
+    background-color: #dd4b39;
+}
+.text-verd {
+    color: #1b9a85;
+    font-weight: 500;
+}
+
+.main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.login{
+    border-radius: 5px;
+    box-shadow: 0 0 30px #eee;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    padding: 15px;
+}
+
+/* usuario */
+.img-size{
+    height: 400px;
+  }
+  
+  .bg-options-list{ 
+    background: #1E293B;
+  }
+  
+  .item-styles{
+    list-style: none;
+  }
+  
+  .item-styles:hover{
+    background: rgb(29, 36, 46);
+    cursor: pointer;
+  }
+  
+  .box-input-styles{ 
+    background: rgb(55, 70, 94);
+    border-radius: 5px;
+    /* box-shadow: 10px 10px 24px -6px rgba(0,0,0,0.75); */
+    box-shadow: 2px 10px 33px -6px rgba(0,0,0,0.75); 
+  }
+  
+  .input-styles{
+    background: transparent; 
+    border-radius: 5px;
+    border: none; 
+    background: rgb(55, 70, 94);
+  }
+  
+  .input-styles:focus{
+    outline: none;
+  }
+  
+  .icon-search-styles{
+    font-size: 1.2em;
+    padding: 6px 6px 2px 2px;
+  }
+  
+  .icon-color{
+    color: #48DAD0;
+  }
+  .img-mapa{
+      width: 300px;
+  }
+
+  /* MAP´S STYLES*/
+
+#map{
+    height: 400px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+/* ------------- */
+
+.directions li span.arrow {
+    display:inline-block;
+    min-width:28px;
+    min-height:28px;
+    background-position:0px;
+    background-image: url("../assets/images/arrows.png");
+    position:relative;
+    top:8px;
+  }
+  .directions li span.depart  {
+    background-position:-28px;
+  }
+  .directions li span.rightUTurn  {
+    background-position:-56px;
+  }
+  .directions li span.leftUTurn  {
+    background-position:-84px;
+  }
+  .directions li span.rightFork  {
+    background-position:-112px;
+  }
+  .directions li span.leftFork  {
+    background-position:-140px;
+  }
+  .directions li span.rightMerge  {
+    background-position:-112px;
+  }
+  .directions li span.leftMerge  {
+    background-position:-140px;
+  }
+  .directions li span.slightRightTurn  {
+    background-position:-168px;
+  }
+  .directions li span.slightLeftTurn{
+    background-position:-196px;
+  }
+  .directions li span.rightTurn  {
+    background-position:-224px;
+  }
+  .directions li span.leftTurn{
+    background-position:-252px;
+  }
+  .directions li span.sharpRightTurn  {
+    background-position:-280px;
+  }
+  .directions li span.sharpLeftTurn{
+    background-position:-308px;
+  }
+  .directions li span.rightRoundaboutExit1 {
+    background-position:-616px;
+  }
+  .directions li span.rightRoundaboutExit2 {
+    background-position:-644px;
+  }
+  
+  .directions li span.rightRoundaboutExit3 {
+    background-position:-672px;
+  }
+  
+  .directions li span.rightRoundaboutExit4 {
+    background-position:-700px;
+  }
+  
+  .directions li span.rightRoundaboutPass {
+    background-position:-700px;
+  }
+  .directions li span.rightRoundaboutExit5 {
+    background-position:-728px;
+  }
+  .directions li span.rightRoundaboutExit6 {
+    background-position:-756px;
+  }
+  .directions li span.rightRoundaboutExit7 {
+    background-position:-784px;
+  }
+  .directions li span.rightRoundaboutExit8 {
+    background-position:-812px;
+  }
+  .directions li span.rightRoundaboutExit9 {
+    background-position:-840px;
+  }
+  .directions li span.rightRoundaboutExit10 {
+    background-position:-868px;
+  }
+  .directions li span.rightRoundaboutExit11 {
+    background-position:896px;
+  }
+  .directions li span.rightRoundaboutExit12 {
+    background-position:924px;
+  }
+  .directions li span.leftRoundaboutExit1  {
+    background-position:-952px;
+  }
+  .directions li span.leftRoundaboutExit2  {
+    background-position:-980px;
+  }
+  .directions li span.leftRoundaboutExit3  {
+    background-position:-1008px;
+  }
+  .directions li span.leftRoundaboutExit4  {
+    background-position:-1036px;
+  }
+  .directions li span.leftRoundaboutPass {
+    background-position:1036px;
+  }
+  .directions li span.leftRoundaboutExit5  {
+    background-position:-1064px;
+  }
+  .directions li span.leftRoundaboutExit6  {
+    background-position:-1092px;
+  }
+  .directions li span.leftRoundaboutExit7  {
+    background-position:-1120px;
+  }
+  .directions li span.leftRoundaboutExit8  {
+    background-position:-1148px;
+  }
+  .directions li span.leftRoundaboutExit9  {
+    background-position:-1176px;
+  }
+  .directions li span.leftRoundaboutExit10  {
+    background-position:-1204px;
+  }
+  .directions li span.leftRoundaboutExit11  {
+    background-position:-1232px;
+  }
+  .directions li span.leftRoundaboutExit12  {
+    background-position:-1260px;
+  }
+  .directions li span.arrive  {
+    background-position:-1288px;
+  }
+  .directions li span.leftRamp  {
+    background-position:-392px;
+  }
+  .directions li span.rightRamp  {
+    background-position:-420px;
+  }
+  .directions li span.leftExit  {
+    background-position:-448px;
+  }
+  .directions li span.rightExit  {
+    background-position:-476px;
+  }
+  
+  .directions li span.ferry  {
+    background-position:-1316px;
+  }  
